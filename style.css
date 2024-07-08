@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --color-primary: #d4a373;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+}
+body {
+  background-color: #fefae0;
+  flex-wrap: wrap;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  position: fixed;
+  width: 100%;
+  padding: 0 20px;
+  height: 70px;
+}
+header img {
+  height: 70px;
+}
+.navbar-conteiner,
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-list {
+  gap: 40px;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #606c38;
+  font-weight: 750;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  padding: 120px 0;
+}
+.info h1 {
+  font-weight: 800;
+  font-size: 40px;
+}
+.info {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  /* border: 1px solid red; */
+  font-weight: 500;
+}
+.info-btn {
+  display: flex;
+  gap: 20px;
+  /* border: 1px solid red; */
+}
+.btn-1 {
+  padding: 10px 15px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fefae0;
+}
+.btn-2 {
+  padding: 10px 15px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fefae0;
+}
+.hero img {
+  height: 200px;
+}
+
+.about {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 50px 0;
+}
+.about h2 {
+  font-weight: 800;
+  font-size: 30px;
+}
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  padding: 10px 0 50px;
+}
+
+/* ######### MEDIAQUERIES ################# */
+
+@media (max-width: 470px) {
+  header {
+    /* border: solid 1px black; */
+    max-width: 100%;
+    flex-direction: column;
+    height: 120px;
+  }
+  .navbar-conteiner {
+    /* border: solid 1px black; */
+    max-width: 100%;
+  }
+
+  .navbar-list {
+    /* border: solid 1px black; */
+    max-width: 100%;
+  }
+  .hero,
+  .about {
+    flex-wrap: wrap;
+  }
+  .about {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 760px) {
+  .hero,
+  .about {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .about {
+    padding: 0 50px;
+  }
+}
+
+/* INFO SECTION  */
+
+#info {
+  max-width: var(--max-width);
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  /* border: 1px solid green; */
+}
+
+#info h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.info-cards-container {
+  display: flex;
+  gap: 20px;
+}
+
+.info-card {
+  background: var(--secondary);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.info-card img {
+  width: 50px;
+}
+
+.info-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.info-card p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-gray);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 70px 0;
+}
+
+footer a,
+footer p {
+  color: var(--text-gray);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+
+footer span {
+  font-weight: 800;
+}
+
+#contacto {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
+.contacto-direccion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
